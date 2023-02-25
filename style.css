@@ -56,6 +56,7 @@ body {
     padding: 10px;
     font-size: 20px;
     position: relative;
+    transition: .3s;
 }
 
 .question>h3 {
@@ -85,4 +86,14 @@ body {
     height: 100px;
     padding-top: 20px;
     cursor: pointer;
+}
+
+.accordion .content-container.show .question {
+    transform: scale(.98);
+    transition: .3s;
+}
+
+.accordion .content-container.show .question::after {
+    content: '-';
+    font-size: 3rem;
 }
