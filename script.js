@@ -1,12 +1,21 @@
 
+const btn = document.querySelector('#three')
 
-document.querySelector('.accordion-content').addEventListener('click', function (e) {
-    const target = document.querySelector('.content-container')
-
-    if (target.matches('div')) {
-        target.classList.toggle('show')
-    }
-
-
+btn.addEventListener('click', function (e) {
+    this.classList.toggle('show')
 })
+const drag = document.querySelector('#one')
 
+drag.addEventListener('click', function (e) {
+    this.classList.toggle('show')
+})
+const close = document.querySelector('#two')
+
+close.addEventListener('click', function (e) {
+    this.classList.toggle('show')
+})
+const open = document.querySelector('#four')
+
+open.addEventListener('click', function (e) {
+    this.classList.toggle('show')
+})

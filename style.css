@@ -59,7 +59,7 @@ body {
     transition: .3s;
 }
 
-.question>h3 {
+.question {
     cursor: pointer;
 }
 
